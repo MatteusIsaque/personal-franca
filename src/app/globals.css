@@ -2,26 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
+  font-family: "montserrat", sans-serif;
+  z-index: -2;
+}
+
+#whatsapp {
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    120deg,
+    rgba(64, 195, 81, 1) 0%,
+    rgba(46, 124, 55, 1) 100%
+  );
+  z-index: 2;
+}
+
+#whatsapp::before {
+  z-index: -1;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  filter: blur(6px);
+  border-radius: 10px;
+  background: linear-gradient(
+    120deg,
+    rgba(64, 195, 81, 1) 0%,
+    rgba(46, 124, 55, 1) 100%
+  );
+}
+
+#callToAction {
+  background: linear-gradient(
+    180deg,
+    rgba(242, 195, 5, 1) 0%,
+    rgba(219, 179, 16, 1) 100%
+  );
+
+  z-index: 2;
+}
+
+#callToAction::before {
+  z-index: -1;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  filter: blur(4px);
+  border-radius: 10px;
+  background: linear-gradient(
+    180deg,
+    rgba(242, 195, 5, 1) 0%,
+    rgba(219, 179, 16, 1) 100%
+  );
+}
+
+#nav{
+  backdrop-filter: opacity(20%);
+}
+
+#black{
+  font-weight: 600;
+  color: rgb(168, 44, 44);
+}
+
+#yellow{
+  font-weight: 600;
+  color: #f2c305;
 }
