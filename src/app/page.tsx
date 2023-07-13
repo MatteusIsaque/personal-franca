@@ -35,23 +35,39 @@ export default function Index() {
 
   return (
     <main>
-      <section className="grid grid-cols-2 px-[5%] min-h-[90vh] bg-black-800 gap-x-10 tablet:grid-cols-1 tablet:flex tablet:flex-col-reverse tablet:justify-center tablet:gap-y-20 mobile:gap-y-10">
+      <section id="inicio" className="grid grid-cols-2 px-[5%] min-h-[90vh] bg-black-800 gap-x-10 tablet:grid-cols-1 tablet:flex tablet:flex-col-reverse tablet:justify-center tablet:gap-y-20 mobile:gap-y-10">
         <div className="text-white-900 flex items-center justify-center flex-col">
-          <h1 className="text-4xl">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis,
-            corporis
+          <h1 className="text-4xl font-semibold">
+            Personal treinar em{" "}
+            <span id="yellow" className="underline">
+              Vítoria pernanbuco
+            </span>
+            , faça sua primeira{" "}
+            <span id="yellow" className="underline">
+              aula de teste
+            </span>
+            , faça treinos que{" "}
+            <span id="yellow" className="underline">
+              gerem resultados
+            </span>
           </h1>
           <p className="mt-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quam
-            impedit, id laborum libero explicabo dolorem! Aut nam alias, iusto
-            esse repellendus ducimus fugit, necessitatibus tenetur, enim unde a
-            minima!
+            Tem{" "}
+            <span id="yellow">
+              treinado mas não está satisfeito com os resultados?
+            </span>{" "}
+            isso pode ser causa de vários problemas que estão impedindo seu
+            crescimento e fazendo{" "}
+            <span id="yellow">você perder muito tempo</span>, entre em contato
+            comigo e experimente a{" "}
+            <span id="yellow">primeira aula de teste</span>, eu garanto que{" "}
+            <span id="yellow">seus treinos não serão mais os mesmos</span>.
           </p>
 
           <button
             // id="whatsapp"
             id="callToAction"
-            className="mt-2 w-full p-3 rounded-md text-xl text-white flex items-center relative justify-center text-black-800"
+            className="mt-4 w-full p-3 rounded-md text-xl text-white flex items-center relative justify-center text-black-800"
           >
             <ImWhatsapp className="mr-2" />
             Fale com personal perto de você agora!
@@ -64,14 +80,13 @@ export default function Index() {
             height="515"
             src="https://www.youtube.com/embed/uic-GdWEgrg"
             title="YouTube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           ></iframe>
         </div>
       </section>
 
-      <section className="bg-white py-14">
+      <section id="beneficios" className="bg-white py-14">
         <h3 className="text-center mb-10 text-4xl font-semibold">
-          Comigo você vai ter:
+          Um personal que está sempre com você!
         </h3>
         <div className="grid grid-cols-3 gap-x-5 gap-y-5 max-w-[90%] m-auto tablet:grid-cols-2 mobile:grid-cols-1">
           <div className="flex flex-col justify-center mobile:text-center mobile:items-center">
@@ -100,14 +115,15 @@ export default function Index() {
               podem ser difíceis de corrigir. Portanto, é{" "}
               <span id="black"> essencial priorizar uma postura</span> adequada
               durante os exercícios para evitar possíveis complicações no
-              futuro.
+              futuro,{" "}
+              <span id="black">e caso já tenha, ela será corrigida.</span>
             </p>
           </div>
 
           <div className="flex flex-col justify-center mobile:text-center mobile:items-center">
             <FiActivity className="text-6xl" />
             <h2 className="text-xl font-semibold py-1">
-              Treino adptado para deficiencias
+              Treino adptado para individualidades biológicas
             </h2>
             <p>
               Nossos treinos são{" "}
@@ -125,7 +141,7 @@ export default function Index() {
           <div className="flex flex-col justify-center mobile:text-center mobile:items-center">
             <FaWhatsappSquare className="text-6xl" />
             <h2 className="text-xl font-semibold py-1">
-              Disponibilidade para duvídas
+              Total disponibilidade para duvídas
             </h2>
             <p>
               Um <span id="black">diferencial</span> que ofereço é a
@@ -179,7 +195,7 @@ export default function Index() {
         </div>
       </section>
 
-      <section className="bg-black-800 px-[5%] pt-24 flex gap-x-10 tablet:flex-col">
+      <section id="testemunhos" className="bg-black-800 px-[5%] pt-24 flex gap-x-10 tablet:flex-col">
         <div className="col-span-4 bg-black-100 h-full min-w-[50%]">
           <Image src={antes} alt="antes e depois" />
         </div>
@@ -224,8 +240,12 @@ export default function Index() {
       </section>
 
       <section className="bg-black-800 px-[5%] py-24 mobile:py-12">
-        <h5 className="text-center text-white-900 text-4xl font-semibold mb-4">
-          Não só eu, mas meus alunos também!
+        <h5 className="text-center text-white-900 text-4xl font-semibold mb-8">
+          Veja alguns <span id="yellow">projetos</span> de{" "}
+          <span id="yellow">120</span> dias dos{" "}
+          <span id="yellow" className="underline">
+            meus alunos
+          </span>
         </h5>
         <div className="grid grid-cols-4 gap-x-10 tablet:grid-cols-2 tablet:gap-y-10 mobile:grid-cols-1">
           <div>
@@ -243,7 +263,14 @@ export default function Index() {
         </div>
 
         <h5 className="text-center text-4xl text-white-900 mt-24 mb-4 font-semibold">
-          Você está extremamente perto de alcançar essa mudança de vida!
+          Você está{" "}
+          <span id="yellow" className="underline">
+            extremamente perto
+          </span>{" "}
+          de alcançar essa{" "}
+          <span id="yellow" className="underline">
+            mudança de vida!
+          </span>
         </h5>
         <button
           id="callToAction"
@@ -254,7 +281,7 @@ export default function Index() {
         </button>
       </section>
 
-      <section className="bg-white-900 px-[5%] py-24 mobile:px-[5%]">
+      <section id="duvidas" className="bg-white-900 px-[5%] py-24 mobile:px-[5%]">
         <h6 className="text-3xl text-white font-bold mb-4 mobile:2">
           Perguntas frequentes
         </h6>
@@ -311,10 +338,13 @@ export default function Index() {
               questionTwo === true ? "block" : "hidden"
             }`}
           >
-            Ao entrar em contato comigo, podemos informar sobre os valores, por
-            questão de ética, o CRP não permite que eu faça anuncio de valores
-            diretamente na página, mas podemos por whatsapp planejar pagamentos
-            por atendimento ou planos mensaias.
+            Os benefícios do exercício físico podem ser notados nas primeiras
+            semanas de treino, abrangendo o condicionamento físico, emocional e
+            mental. Seguindo as instruções adequadas, é importante ressaltar que
+            a estética pode variar dependendo do bíotipo de cada indivíduo. No
+            entanto, independentemente da situação e das características
+            pessoais, a ciência comprova que, em aproximadamente 120 dias, é
+            possível sentir uma significativa diferença em relação à estética.
           </p>
         </div>
       </section>

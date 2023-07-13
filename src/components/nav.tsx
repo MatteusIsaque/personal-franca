@@ -1,6 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
 import Logo from './../img/personal-frança.png'
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "França Personal Trainer",
+  description: "França personal trainer, tenha resultados rápidos para seus treinos."
+}
 
 export default function Nav() {
   return (
@@ -11,16 +17,16 @@ export default function Nav() {
 
       <ul className="flex items-center justify-center text-white-900 gap-x-4">
         <li>
-          <Link href="/" className="text-xl">Ínicio</Link>
+          <Link href="/?counter=#inicio" scroll={true} className="text-xl">Ínicio</Link>
         </li>
         <li>
-          <Link href="/" className="text-xl">Benefícios</Link>
+          <Link href="/?counter=#beneficios" scroll={true} className="text-xl">Benefícios</Link>
         </li>
         <li>
-          <Link href="/" className="text-xl">Testemunhos</Link>
+          <Link href="/?counter=#testemunhos" scroll={true} className="text-xl">Testemunhos</Link>
         </li>
         <li>
-          <Link href="/" className="text-xl">Dúvidas</Link>
+          <Link href="/?counter=#duvidas" className="text-xl">Dúvidas</Link>
         </li>
       </ul>
     </nav>
