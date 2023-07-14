@@ -70,6 +70,7 @@ export default function Index() {
           <Link
             href="https://api.whatsapp.com/send?phone=558185092664"
             className="w-full"
+            id="callToAction"
           >
             <button
               // id="whatsapp"
@@ -281,6 +282,7 @@ export default function Index() {
         <Link
           href="https://api.whatsapp.com/send?phone=558185092664"
           className="w-full"
+          id="callToAction"
         >
           <button
             id="callToAction"
@@ -364,9 +366,9 @@ export default function Index() {
         </div>
       </section>
 
-      <div className="fixed bottom-5 right-5">
-        <Link href="https://api.whatsapp.com/send?phone=558185092664">
-          <Image src={Whatsapp} alt="whatsapp" width={60} />
+      <div className="fixed bottom-5 right-5" id="zap">
+        <Link href="https://api.whatsapp.com/send?phone=558185092664" id="zap">
+          <Image src={Whatsapp} alt="whatsapp" width={60} id="zap" />
         </Link>
       </div>
     </main>
