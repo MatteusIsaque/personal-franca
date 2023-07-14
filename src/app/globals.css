@@ -16,7 +16,7 @@ body {
   z-index: 2;
 }
 
-#whatsapp::before {
+whatsapp::before {
   z-index: -1;
   content: " ";
   height: 100%;
@@ -32,17 +32,27 @@ body {
   );
 }
 
-#callToAction {
+.zapCall {
   background: linear-gradient(
     180deg,
     rgba(242, 195, 5, 1) 0%,
     rgba(219, 179, 16, 1) 100%
   );
-
+  max-height: 40px;
   z-index: 2;
+  margin-top: 16px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 0.375rem;
+  position: relative;
+  color: black;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
 }
 
-#callToAction::before {
+.zapCall::before {
   z-index: -1;
   content: " ";
   height: 100%;
@@ -58,16 +68,16 @@ body {
   );
 }
 
-#nav{
+#nav {
   backdrop-filter: opacity(20%);
 }
 
-#black{
+#black {
   font-weight: 600;
   color: rgb(168, 44, 44);
 }
 
-#yellow{
+#yellow {
   font-weight: 600;
   color: #f2c305;
 }

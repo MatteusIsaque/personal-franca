@@ -73,9 +73,9 @@ export default function Index() {
             id="callToAction"
           >
             <button
-              // id="whatsapp"
               id="callToAction"
-              className="mt-4 w-full p-3 rounded-md text-xl text-white flex items-center relative justify-center text-black-800 mobile:text-xs"
+              // id="whatsapp"
+              className="zapCall"
             >
               <ImWhatsapp className="mr-2" />
               Fale com personal perto de você agora!
@@ -284,10 +284,7 @@ export default function Index() {
           className="w-full"
           id="callToAction"
         >
-          <button
-            id="callToAction"
-            className="mt-2 w-full p-3 rounded-md text-xl text-white flex items-center relative justify-center text-black-800"
-          >
+          <button id="callToAction" className="zapCall">
             <ImWhatsapp className="mr-2" />
             Passar pelo projeto de mudança
           </button>
