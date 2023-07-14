@@ -43,7 +43,7 @@ export default function Index() {
           <h1 className="text-4xl font-semibold mobile:text-3xl">
             Personal trainer em{" "}
             <span id="yellow" className="underline">
-              Vitóriam Pernambuco
+              Vitória Pernambuco
             </span>
             , faça sua primeira{" "}
             <span id="yellow" className="underline">
