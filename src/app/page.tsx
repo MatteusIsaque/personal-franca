@@ -41,7 +41,7 @@ export default function Index() {
       >
         <div className="text-white-900 flex items-center justify-center flex-col">
           <h1 className="text-4xl font-semibold mobile:text-3xl">
-            Personal treinar em{" "}
+            Personal trainar em{" "}
             <span id="yellow" className="underline">
               Vitória pernambuco
             </span>
@@ -67,7 +67,10 @@ export default function Index() {
             <span id="yellow">seus treinos não serão mais os mesmos</span>.
           </p>
 
-          <Link href="https://api.whatsapp.com/send?phone=558185092664" className="w-full">
+          <Link
+            href="https://api.whatsapp.com/send?phone=558185092664"
+            className="w-full"
+          >
             <button
               // id="whatsapp"
               id="callToAction"
@@ -245,8 +248,7 @@ export default function Index() {
 
       <section className="bg-black-800 px-[5%] py-24 mobile:py-12">
         <h5 className="text-center text-white-900 text-4xl font-semibold mb-8">
-          Veja alguns <span id="yellow">projetos</span> de{" "}
-          <span id="yellow">120</span> dias dos{" "}
+          Veja alguns <span id="yellow">resultados</span> dos
           <span id="yellow" className="underline">
             meus alunos
           </span>
@@ -276,15 +278,18 @@ export default function Index() {
             mudança de vida!
           </span>
         </h5>
-        <Link href="https://api.whatsapp.com/send?phone=558185092664" className="w-full">
-        <button
-          id="callToAction"
-          className="mt-2 w-full p-3 rounded-md text-xl text-white flex items-center relative justify-center text-black-800"
+        <Link
+          href="https://api.whatsapp.com/send?phone=558185092664"
+          className="w-full"
+        >
+          <button
+            id="callToAction"
+            className="mt-2 w-full p-3 rounded-md text-xl text-white flex items-center relative justify-center text-black-800"
           >
-          <ImWhatsapp className="mr-2" />
-          Passar pelo projeto de mudança
-        </button>
-          </Link>
+            <ImWhatsapp className="mr-2" />
+            Passar pelo projeto de mudança
+          </button>
+        </Link>
       </section>
 
       <section
@@ -317,10 +322,11 @@ export default function Index() {
               questionOne === true ? "block" : "hidden"
             }`}
           >
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad debitis
-            autem perspiciatis, tempore maxime voluptas eius id non quos
-            recusandae quibusdam illum nisi aliquam incidunt nostrum sapiente,
-            veritatis, ea quidem?
+            O pagamento é sempre necessário com antecedência antes dos treinos.
+            O valor varia dependendo do tipo de atendimento: para atendimento
+            presencial, há opções de 2, 3, 4 ou 5 dias por semana, enquanto na
+            consultoria online, os planos são oferecidos para 120 dias, 3 meses,
+            6 meses e 1 ano.
           </p>
         </div>
 
