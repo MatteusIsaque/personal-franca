@@ -41,9 +41,9 @@ export default function Index() {
       >
         <div className="text-white-900 flex items-center justify-center flex-col">
           <h1 className="text-4xl font-semibold mobile:text-3xl">
-            Personal trainar em{" "}
+            Personal trainer em{" "}
             <span id="yellow" className="underline">
-              Vitória pernambuco
+              Vitóriam Pernambuco
             </span>
             , faça sua primeira{" "}
             <span id="yellow" className="underline">
