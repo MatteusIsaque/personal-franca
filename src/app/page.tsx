@@ -114,7 +114,7 @@ export default function Index() {
 
           <div className="flex flex-col justify-center mobile:text-center mobile:items-center">
             <FaPeopleRobbery className="text-6xl" />
-            <h2 className="text-xl font-semibold py-1">Coreção postural</h2>
+            <h2 className="text-xl font-semibold py-1">Correção postural</h2>
             <p>
               A postura que você adota no seu dia a dia pode ter um{" "}
               <span id="black">impacto significativo</span> no alinhamento do
@@ -162,7 +162,7 @@ export default function Index() {
           <div className="flex flex-col justify-center mobile:text-center mobile:items-center">
             <BsCalendar3 className="text-6xl" />
             <h2 className="text-xl font-semibold py-1">
-              Periodo e tempo dos treinos
+              Período e tempo dos treinos
             </h2>
             <p>
               Você terá exercícios estrategicamente distribuídos ao longo da
@@ -248,7 +248,7 @@ export default function Index() {
 
       <section className="bg-black-800 px-[5%] py-24 mobile:py-12">
         <h5 className="text-center text-white-900 text-4xl font-semibold mb-8">
-          Veja alguns <span id="yellow">resultados</span> dos
+          Veja alguns <span id="yellow">resultados</span> dos{" "}
           <span id="yellow" className="underline">
             meus alunos
           </span>
