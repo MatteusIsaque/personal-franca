@@ -35,12 +35,15 @@ export default function Index() {
 
   return (
     <main>
-      <section id="inicio" className="grid grid-cols-2 px-[5%] min-h-[90vh] bg-black-800 gap-x-10 tablet:grid-cols-1 tablet:flex tablet:flex-col-reverse tablet:justify-center tablet:gap-y-20 mobile:gap-y-10">
+      <section
+        id="inicio"
+        className="grid grid-cols-2 px-[5%] min-h-[90vh] bg-black-800 gap-x-10 tablet:grid-cols-1 tablet:flex tablet:flex-col-reverse tablet:justify-center tablet:gap-y-20 mobile:gap-y-10"
+      >
         <div className="text-white-900 flex items-center justify-center flex-col">
-          <h1 className="text-4xl font-semibold">
+          <h1 className="text-4xl font-semibold mobile:text-3xl">
             Personal treinar em{" "}
             <span id="yellow" className="underline">
-              Vítoria pernanbuco
+              Vitória pernambuco
             </span>
             , faça sua primeira{" "}
             <span id="yellow" className="underline">
@@ -64,14 +67,16 @@ export default function Index() {
             <span id="yellow">seus treinos não serão mais os mesmos</span>.
           </p>
 
-          <button
-            // id="whatsapp"
-            id="callToAction"
-            className="mt-4 w-full p-3 rounded-md text-xl text-white flex items-center relative justify-center text-black-800"
-          >
-            <ImWhatsapp className="mr-2" />
-            Fale com personal perto de você agora!
-          </button>
+          <Link href="https://api.whatsapp.com/send?phone=558185092664" className="w-full">
+            <button
+              // id="whatsapp"
+              id="callToAction"
+              className="mt-4 w-full p-3 rounded-md text-xl text-white flex items-center relative justify-center text-black-800 mobile:text-xs"
+            >
+              <ImWhatsapp className="mr-2" />
+              Fale com personal perto de você agora!
+            </button>
+          </Link>
         </div>
 
         <div className=" flex justify-center items-center h-full w-full">
@@ -108,15 +113,11 @@ export default function Index() {
             <FaPeopleRobbery className="text-6xl" />
             <h2 className="text-xl font-semibold py-1">Coreção postural</h2>
             <p>
-              É de extrema importância realizar os exercícios com uma{" "}
-              <span id="black">postura correta</span>. Muitas pessoas tendem a
-              cometer erros nesse aspecto, o que{" "}
-              <span id="black">pode resultar em problemas futuros</span> que
-              podem ser difíceis de corrigir. Portanto, é{" "}
-              <span id="black"> essencial priorizar uma postura</span> adequada
-              durante os exercícios para evitar possíveis complicações no
-              futuro,{" "}
-              <span id="black">e caso já tenha, ela será corrigida.</span>
+              A postura que você adota no seu dia a dia pode ter um{" "}
+              <span id="black">impacto significativo</span> no alinhamento do
+              seu corpo. Ao corrigir adequadamente a sua postura, você poderá{" "}
+              <span id="black">desfrutar de uma série de benefícios</span> tanto
+              durante quanto fora dos treinos.
             </p>
           </div>
 
@@ -195,7 +196,10 @@ export default function Index() {
         </div>
       </section>
 
-      <section id="testemunhos" className="bg-black-800 px-[5%] pt-24 flex gap-x-10 tablet:flex-col">
+      <section
+        id="testemunhos"
+        className="bg-black-800 px-[5%] pt-24 flex gap-x-10 tablet:flex-col"
+      >
         <div className="col-span-4 bg-black-100 h-full min-w-[50%]">
           <Image src={antes} alt="antes e depois" />
         </div>
@@ -272,16 +276,21 @@ export default function Index() {
             mudança de vida!
           </span>
         </h5>
+        <Link href="https://api.whatsapp.com/send?phone=558185092664" className="w-full">
         <button
           id="callToAction"
           className="mt-2 w-full p-3 rounded-md text-xl text-white flex items-center relative justify-center text-black-800"
-        >
+          >
           <ImWhatsapp className="mr-2" />
           Passar pelo projeto de mudança
         </button>
+          </Link>
       </section>
 
-      <section id="duvidas" className="bg-white-900 px-[5%] py-24 mobile:px-[5%]">
+      <section
+        id="duvidas"
+        className="bg-white-900 px-[5%] py-24 mobile:px-[5%]"
+      >
         <h6 className="text-3xl text-white font-bold mb-4 mobile:2">
           Perguntas frequentes
         </h6>
@@ -350,7 +359,7 @@ export default function Index() {
       </section>
 
       <div className="fixed bottom-5 right-5">
-        <Link href="/">
+        <Link href="https://api.whatsapp.com/send?phone=558185092664">
           <Image src={Whatsapp} alt="whatsapp" width={60} />
         </Link>
       </div>
