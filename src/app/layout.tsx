@@ -29,16 +29,14 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-MDSPGZ6')`,
           }}
         />
+
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-712767969');`,
+          }}
+        />
       </head>
       <body className={inter.className}>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-MDSPGZ6"
-            height="0"
-            width="0"
-            className="none hidden"
-          ></iframe>
-        </noscript>
         <Nav />
         {children}
         <Footer />
