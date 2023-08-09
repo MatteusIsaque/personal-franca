@@ -78,7 +78,7 @@ export default function Index() {
           <iframe
             className="w-[560px] tablet:w-full"
             height="515"
-            src="https://www.youtube.com/embed/uic-GdWEgrg"
+            src="https://www.youtube.com/embed/bLUCmJIfLf4"
             title="YouTube video player"
           ></iframe>
         </div>
