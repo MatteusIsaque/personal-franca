@@ -37,16 +37,16 @@ export default function Index() {
     <main>
       <section
         id="inicio"
-        className="grid grid-cols-2 px-[5%] min-h-[90vh] bg-black-800 gap-x-10 tablet:grid-cols-1 tablet:flex tablet:flex-col-reverse tablet:justify-center tablet:gap-y-20 mobile:gap-y-10"
+        className="grid grid-cols-2 px-[5%] min-h-[90vh] bg-black-800 gap-x-10 mobile:pb-6 tablet:grid-cols-1 tablet:flex tablet:flex-col-reverse tablet:justify-center tablet:gap-y-20 mobile:gap-y-10"
       >
         <div className="text-white-900 flex items-center justify-center flex-col">
-          <h1 className="text-5xl font-semibold mobile:text-4xl">
+          <h1 className="text-5xl font-semibold tablet:text-4xl mobile:text-3xl">
             <span id="yellow">Personal Online</span>, no horário que preferir,
             em <span id="yellow">qualquer lugar</span> que{" "}
             <span id="yellow">esteja</span>, gerando{" "}
             <span id="yellow">grandes resultados</span>!
           </h1>
-          <p className="mt-2 text-2xl">
+          <p className="mt-2 text-2xl mobile:text-lg">
             Seus treinos <span id="yellow">não</span> estão{" "}
             <span id="yellow">gerando resultados?</span> pode ser causa de
             vários problemas impedindo seu crescimento e fazendo{" "}
@@ -69,7 +69,7 @@ export default function Index() {
               Fale comigo agora mesmo!
             </button>
           </Link>
-          <p className="text-white mt-2">
+          <p className="text-white mt-2 text-center">
             Faça uma primeira chamada de vídeo/voz grátis!
           </p>
         </div>

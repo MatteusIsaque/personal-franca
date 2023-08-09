@@ -13,10 +13,10 @@ export default function Nav() {
         <Image src={Logo} alt="logo isaques estúdios" height={50} />
       </div>
 
-      <div className="hidden mobile:block">
+      {/* <div className="hidden mobile:block"> */}
         <p className="text-white-900 mobile:text-sm">Cref 018333-G/PE</p>
-      </div>
-      <ul className="flex items-center justify-center text-white-900 gap-x-4 mobile:hidden">
+      {/* </div> */}
+      {/* <ul className="flex items-center justify-center text-white-900 gap-x-4 mobile:hidden">
         <li>
           <Link href="/?counter=#inicio" scroll={true} className="text-xl">
             Ínicio
@@ -37,7 +37,7 @@ export default function Nav() {
             Dúvidas
           </Link>
         </li>
-      </ul>
+      </ul> */}
     </nav>
   );
 }
