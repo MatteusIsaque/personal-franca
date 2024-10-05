@@ -256,7 +256,7 @@ export default function Index() {
           </div>
           <div>
             <Image src={prova4} alt="prova 4" />
-          </div>
+          </div>,
                     <div>
             <Image src={prova4} alt="prova 4" />
           </div>
