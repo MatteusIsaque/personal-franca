@@ -194,7 +194,6 @@ export default function Index() {
       >
         <div className="col-span-4 bg-black-100 h-full min-w-[50%]">
           <img
-  class="fit-picture"
   src="https://i.imgur.com/PASgePk.jpeg"
   alt="Grapefruit slice atop a pile of other slices" />
         </div>
