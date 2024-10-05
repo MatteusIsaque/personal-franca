@@ -193,7 +193,10 @@ export default function Index() {
         className="bg-black-800 px-[5%] pt-24 flex gap-x-10 tablet:flex-col"
       >
         <div className="col-span-4 bg-black-100 h-full min-w-[50%]">
-          <Image src={antes} alt="antes e depois" />
+          <img
+  class="fit-picture"
+  src="https://i.imgur.com/PASgePk.jpeg"
+  alt="Grapefruit slice atop a pile of other slices" />
         </div>
         <div className="text-white-900 col-span-5 tablet:mt-10">
           <h4 className="text-5xl font-semibold mb-4">
