@@ -267,6 +267,9 @@ export default function Index() {
           <div>
             <Image src={prova4} alt="prova 4" />
           </div>
+                    <div>
+            <Image src={prova4} alt="prova 4" />
+          </div>
         </div>
 
         <h5 className="text-center text-4xl text-white-900 mt-24 mb-4 font-semibold">
